@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Super Sentai Saikyo Battle</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="#" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<style type="text/css">
+		.hf{
+			height: 40px;
+			background-color: darkred;
+			color: white;
+			text-align: center;
+			padding: 7px;
+		}
+		.selected{
+			background-color: yellow;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: green;">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Sentai
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="../sentai/s3b.html">Super Sentai Saikyo Battle</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="../sentai/lupvskei.html">Kaitou Sentai Lupinranger VS Keisatsu Sentai Patranger</a>
+					</div>
+				</li>		     
+			</ul>		    
+		</div>
+	</nav>
+
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+			<li class="breadcrumb-item"><a href="#">Sentai</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Super Sentai Saikyo Battle Tập <span id="tap">1</span></li>
+		</ol>
+	</nav>
+
+	<div class="video" id="1">
+		<center>
+			<iframe width="853" height="480" src="//ok.ru/videoembed/1159002720881" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+		</center>
+	</div>
+
+	<div class="video" id="2" hidden="">
+		<center>
+			<iframe width="853" height="480" src="//ok.ru/videoembed/926030498527" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+		</center>
+	</div>
+
+	<div class="video" id="3" hidden="">
+		Nothing
+	</div>
+
+	<div class="video" id="4" hidden="">
+		Nothing
+	</div>
+
+	<div class="col-sm-12" style="background-color: darkgreen">
+		<button class="btn btn-primary selected" id="t1">01</button>
+		<button class="btn btn-primary" id="t2">02</button>
+		<button class="btn btn-primary" id="t3">03</button>
+		<button class="btn btn-primary" id="t4">04</button>
+	</div>
+
+	<div class="hf">@Copyright 2019 by yuto. All Rights Reserved.</div>	
+
+
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			function remove_selected() {
+				$("button").removeClass("selected");
+			}
+
+			function reset_hidden() {
+				$(".video").attr("hidden","");
+			}
+
+			$("#t1").click(function(){
+				remove_selected();
+				reset_hidden();
+				$("#tap").text("1: Ai là người mạnh nhất lịch sử?");
+				$("#t1").addClass("selected");
+				$("#1").removeAttr("hidden");
+			})				
+
+			$("#t2").click(function(){
+				remove_selected();
+				reset_hidden();
+				$("#tap").text("2: Người mặc áo giáp bí ẩn hoạt động ngầm");
+				$("#t2").addClass("selected");
+				$("#2").removeAttr("hidden");
+			})	
+
+			$("#t3").click(function(){
+				remove_selected();
+				reset_hidden();
+				$("#tap").text("3");
+				$("#t3").addClass("selected");
+				$("#3").removeAttr("hidden");
+			})	
+
+			$("#t4").click(function(){
+				remove_selected();
+				reset_hidden();
+				$("#tap").text("4");
+				$("#t4").addClass("selected");
+				$("#4").removeAttr("hidden");
+			})	
+		})
+	</script>
+</body>
+</html>
