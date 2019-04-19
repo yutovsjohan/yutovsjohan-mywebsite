@@ -24,27 +24,7 @@
 	</style>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: green;">
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Sentai
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="../sentai/s3b.html">Super Sentai Saikyo Battle</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="../sentai/lupvskei.html">Kaitou Sentai Lupinranger VS Keisatsu Sentai Patranger</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="../sentai/kyoryuger.html">Zyuden Sentai Kyoryuger</a>
-					</div>
-				</li>		     
-			</ul>		    
-		</div>
-	</nav>
+	<div w3-include-html="../header.html"></div>
 
 	<nav aria-label="breadcrumb">
 		<ol class="breadcrumb">
@@ -116,7 +96,7 @@
 
 	</div>
 
-	<div class="hf">@Copyright 2019 by yuto. All Rights Reserved.</div>	
+	<div w3-include-html="../footer.html"></div> 
 
 
 	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
@@ -124,6 +104,35 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
+			function includeHTML() {
+			  var z, i, elmnt, file, xhttp;
+			  /*loop through a collection of all HTML elements:*/
+			  z = document.getElementsByTagName("*");
+			  for (i = 0; i < z.length; i++) {
+			    elmnt = z[i];
+			    /*search for elements with a certain atrribute:*/
+			    file = elmnt.getAttribute("w3-include-html");
+			    if (file) {
+			      /*make an HTTP request using the attribute value as the file name:*/
+			      xhttp = new XMLHttpRequest();
+			      xhttp.onreadystatechange = function() {
+			        if (this.readyState == 4) {
+			          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+			          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+			          /*remove the attribute, and call this function once more:*/
+			          elmnt.removeAttribute("w3-include-html");
+			          includeHTML();
+			        }
+			      }      
+			      xhttp.open("GET", file, true);
+			      xhttp.send();
+			      /*exit the function:*/
+			      return;
+			    }
+			  }
+			};
+
+			includeHTML();
 			
 			function remove_selected() {
 				$("button").removeClass("selected");

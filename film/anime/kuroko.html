@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kuroko No Basket</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="#" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<style type="text/css">
+		.hf{
+			height: 40px;
+			background-color: darkred;
+			color: white;
+			text-align: center;
+			padding: 7px;
+		}
+		.selected{
+			background-color: yellow;
+			color: red;
+		}
+
+		.scrollbar
+		{
+			margin-left: 10px;
+			float: left;
+			height: 480px;
+			width: 400px;
+			background: #F5F5F5;
+			overflow-y: scroll;
+			margin-bottom: 25px;
+		}
+		.force-overflow
+		{
+			min-height: 450px;
+		}
+		.force-overflow button{
+			width: 100%;
+			text-align: left;
+		}
+		.force-overflow img{
+			width: 106px;
+			height: 60px;
+		}
+	</style>
+</head>
+<body>
+	<div w3-include-html="../header.html"></div>
+
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+			<li class="breadcrumb-item"><a href="#">Anime</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Kuroko No Basket <span class="tap">Tập 1 - Kuroko</span></li>
+		</ol>
+	</nav>
+
+	<div class="row">
+		<div class="row-sm-8" style="margin-left: 25px">
+			<!-- <video id="video" width="853" height="480" controls autoplay="">
+			  <source  src="https://drive.google.com/file/d/10O1zmWt35GBNE5lsAEuNuGvKSYcRAI4A/view" type="video/mp4">
+			  Your browser does not support the video tag.
+			</video> -->
+			<iframe id="video" src="https://vnso-zn-9-tf-zingtv-video-4.zadn.vn/2013/0603/e6/5daeb5713047ee1b7d7e2a850ba5099a.mp4?authen=exp=1555562762~acl=5daeb5713047ee1b7d7e2a850ba5099a~hmac=7848cc37734d1556156964a58c73de23" width="853" height="480" allowfullsrceen></iframe>
+		</div>
+		<div class="row-sm-4">
+			<div class="scrollbar">
+			  <div class="force-overflow">
+<!-- 1 - 25 -->
+		  		<button class="btn btn-info selected btnImg" dataEp="1"><img src="https://i.imacdn.com/vg/2017/02/09/a6ca435668c385a6_1b75dbde05f50060_23408148658084043.jpg">Tập 1 - Kuroko</button>
+				<button class="btn btn-info btnImg" dataEp="2"><img src="https://i.imacdn.com/vg/2017/02/09/830b37010940586f_27f3c5b013f92b87_26610148658084233.jpg">Tập 2 - Tớ nghiêm túc đấy</button>
+				<button class="btn btn-info btnImg" dataEp="3"><img src="https://i.imacdn.com/vg/2017/02/09/02ee4b8fe9504986_9ca8083d3d7c7b6c_18152148658084593.jpg">Tập 3 - Tốt hơn hết là tớ không nên thắng</button>
+				<button class="btn btn-info btnImg" dataEp="4"><img src="https://i.imacdn.com/vg/2017/02/09/8ccb0f6f40541ac4_ef78e822702d083f_31396148658084773.jpg">Tập 4 - Hy vọng cậu thích màn phản công của tôi</button>
+				<button class="btn btn-info btnImg" dataEp="5"><img src="https://i.imacdn.com/vg/2017/02/09/7a2649ec8977b6c6_2d03f964962f8d68_28041148658089043.jpg">Tập 5 - Bóng rổ của cậu!</button>
+				<button class="btn btn-info btnImg" dataEp="6"><img src="https://i.imacdn.com/vg/2017/02/09/42533b8a504fd8bd_8fae07e78de3d942_27348148658089213.jpg">Tập 6 - Để tôi cho cậu biết 2 điều</button>
+				<button class="btn btn-info btnImg" dataEp="7"><img src="https://i.imacdn.com/vg/2017/02/09/9ff8f532c797ef36_7021af2648b29b04_26707148658089443.jpg">Tập 7 - Cậu sẽ được thấy điều tuyệt vời</button>
+				<button class="btn btn-info btnImg" dataEp="8"><img src="https://i.imacdn.com/vg/2017/02/09/3e64efb858dfcb2d_213da756a7531b06_29011148658089733.jpg">Tập 8 - Bây giờ nghĩ lại</button>
+				<button class="btn btn-info btnImg" dataEp="9"><img src="https://i.imacdn.com/vg/2017/02/09/7f241b46134dac59_04baab742da20763_21531148658089933.jpg">Tập 9 - Để chiến thắng</button>
+				<button class="btn btn-info btnImg" dataEp="10"><img src="https://i.imacdn.com/vg/2017/02/09/9d1930777fc52c8b_52912c4626a4014a_24301148658090163.jpg">Tập 10 - Tớ không thể chịu đựng được</button>
+				<button class="btn btn-info btnImg" dataEp="11"><img src="https://i.imacdn.com/vg/2017/02/08/27708b9d179eb404_9dd156f9d81e4cb1_2703214865459926.jpg">Tập 11 - Không phải như thế</button>
+				<button class="btn btn-info btnImg" dataEp="12"><img src="https://i.imacdn.com/vg/2017/02/08/5ba98689ea094f7b_bde21467a15194fe_24624148656250273.jpg">Tập 12 - "Chiến thắng" là gì?</button>
+				<button class="btn btn-info btnImg" dataEp="13"><img src="https://i.imacdn.com/vg/2017/02/08/be0c7ddd6a19bb3f_04f4f04ba5092192_2109614865459942.jpg">Tập 13 - Tớ tin vào cậu</button>
+				<button class="btn btn-info btnImg" dataEp="14"><img src="https://i.imacdn.com/vg/2017/02/08/dd1d52e06b80925b_a6346a9a6617d113_2507014865459995.jpg">Tập 14 - Cậu trông y như nó</button>
+				<button class="btn btn-info btnImg" dataEp="15"><img src="https://i.imacdn.com/vg/2017/02/08/1c0c03aab122ac56_19a383e63f1d6910_21466148656253153.jpg">Tập 15 - Đừng làm tôi buồn cười</button>
+				<button class="btn btn-info btnImg" dataEp="16"><img src="https://i.imacdn.com/vg/2017/02/08/92a4e7227ea73332_9bd2bf486143f2e0_2089714865460055.jpg">Tập 16 - Hãy làm thế</button>
+				<button class="btn btn-info btnImg" dataEp="17"><img src="https://i.imacdn.com/vg/2017/02/08/af4a4e422ebb1b65_e3f2983d54edea4c_2618114865460107.jpg">Tập 17 - Các cậu thật là lố bịch</button>
+				<button class="btn btn-info btnImg" dataEp="18"><img src="https://i.imacdn.com/vg/2017/02/08/2319c033a1703cd1_3cbf2cc771305e73_2711614865460126.jpg">Tập 18 - Không!</button>
+				<button class="btn btn-info btnImg" dataEp="19"><img src="https://i.imacdn.com/vg/2017/02/08/3fd10484496c3de9_c709ef559bc926ae_3167014865460181.jpg">Tập 19 - Thử thách mới</button>
+				<button class="btn btn-info btnImg" dataEp="20"><img src="https://i.imacdn.com/vg/2017/02/08/525e2a9ead15b9ff_557aed4b51af0170_2626214865460225.jpg">Tập 20 - Tôi không muốn</button>
+				<button class="btn btn-info btnImg" dataEp="21"><img src="https://i.imacdn.com/vg/2017/02/08/9e79ab28047ba932_d68d5a9d941815ac_26051148656258743.jpg">Tập 21 - Bắt đầu thôi</button>
+				<button class="btn btn-info btnImg" dataEp="22"><img src="https://i.imacdn.com/vg/2017/02/08/5ff624c6881590a4_8b853c27ba4b2b7f_2256014865460317.jpg">Tập 22 - Dù có chết cũng phải thắng</button>
+				<button class="btn btn-info btnImg" dataEp="23"><img src="https://i.imacdn.com/vg/2017/02/08/fc3270153cb84259_ad2e146f4b0f51f0_3104314865460339.jpg">Tập 23 - Đâu phải là người lớn</button>
+				<button class="btn btn-info btnImg" dataEp="24"><img src="https://i.imacdn.com/vg/2017/02/08/ac52069135fc3afd_61ea75adb53fd570_2333514865460379.jpg">Tập 24 - Đừng hiểu nhầm</button>
+				<button class="btn btn-info btnImg" dataEp="25"><img src="https://i.imacdn.com/vg/2017/02/08/e246265c23db51b1_3ffa777371373075_3806214865460397.jpg">Tập 25 - Bóng rổ của tớ và cậu</button>
+
+<!-- 26 - 50 -->				
+				<button class="btn btn-info btnImg" dataEp="26"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-1-1459860266.jpg">Tập 26 - Tôi không bao giờ nghĩ rằng chúng ta lại gặp nhau ở đây</button>
+				<button class="btn btn-info btnImg" dataEp="27"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-2-1459860266.jpg">Tập 27 - Tại Winter cup</button>
+				<button class="btn btn-info btnImg" dataEp="28"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-3-1459860266.jpg">Tập 28 - Tip off</button>
+				<button class="btn btn-info btnImg" dataEp="29"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-4-1459860267.jpg">Tập 29 - Chỉ có một câu trả lời</button>
+				<button class="btn btn-info btnImg" dataEp="30"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-5-1459860267.jpg">Tập 30 - Tôi đã chờ đợi thời khắc này</button>
+				<button class="btn btn-info btnImg" dataEp="31"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-6-1459860268.jpg">Tập 31 - Tôi đã vượt qua cậu lâu rồi</button>
+				<button class="btn btn-info btnImg" dataEp="32"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-7-1459860269.jpg">Tập 32 - Bỏ cuộc</button>
+				<button class="btn btn-info btnImg" dataEp="33"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-8-1459860270.jpg">Tập 33 - Chúng tôi là đội bóng rổ cao trung Seirin</button>
+				<button class="btn btn-info btnImg" dataEp="34"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-9-1459860270.jpg">Tập 34 - Tôi sẽ đánh bại cậu</button>
+				<button class="btn btn-info btnImg" dataEp="35"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-10-1459860271.jpg">Tập 35 - Đó là sự tin tưởng</button>
+				<button class="btn btn-info btnImg" dataEp="36"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-11-1459860271.jpg">Tập 36 - Đừng đùa với tôi</button>
+				<button class="btn btn-info btnImg" dataEp="37"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-12-1459860273.jpg">Tập 37 - Tôi đang mong chờ lắm đây</button>
+				<button class="btn btn-info btnImg" dataEp="38"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-13-1459860275.jpg">Tập 38 - Nhất định là lần này</button>
+				<button class="btn btn-info btnImg" dataEp="39"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-14-1459860276.jpg">Tập 39 - Nỗ lực vô ích</button>
+				<button class="btn btn-info btnImg" dataEp="40"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-15-1459860277.jpg">Tập 40 - Hạnh phúc từ tận đáy lòng</button>
+				<button class="btn btn-info btnImg" dataEp="41"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-16-1459860277.jpg">Tập 41 - Chúng tôi sẽ chiến thắng ngay bây giờ</button>
+				<button class="btn btn-info btnImg" dataEp="42"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-17-1459860278.jpg">Tập 42 - Vì tớ tin như vậy</button>
+				<button class="btn btn-info btnImg" dataEp="43"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-18-1459860278.jpg">Tập 43 - Chúng tôi sẽ không thua đâu</button>
+				<button class="btn btn-info btnImg" dataEp="44"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-19-1459860279.jpg">Tập 44 - Hãy cho tớ biết</button>
+				<button class="btn btn-info btnImg" dataEp="45"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-20-1459860280.jpg">Tập 45 - Tất nhiên là không dễ dàng rồi</button>
+				<button class="btn btn-info btnImg" dataEp="46"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-21-1459860280.jpg">Tập 46 - Điểm đầu tiên</button>
+				<button class="btn btn-info btnImg" dataEp="47"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-22-1459860281.jpg">Tập 47 - Đó là điều hiển nhiên</button>
+				<button class="btn btn-info btnImg" dataEp="48"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-23-1459860281.jpg">Tập 48 - Tôi không muốn thua</button>
+				<button class="btn btn-info btnImg" dataEp="49"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-24-1459860282.jpg">Tập 49 - Đủ rồi</button>
+				<button class="btn btn-info btnImg" dataEp="50"><img src="https://i.imacdn.com/vg/2016/04/kuroko-no-basket-2-m-tap-25-1459860283.jpg">Tập 50 - Chiến thắng</button>
+				
+<!-- 51 - 75 -->
+				<button class="btn btn-info btnImg" dataEp="51"><img src="https://i.imacdn.com/vg/2015/06/kuroko-no-basket-3rd-season-tap-1.jpg">Tập 51 - Tôi chỉ đấu hết sức mình thôi!</button>
+				<button class="btn btn-info btnImg" dataEp="52"><img src="https://i.imacdn.com/vg/2015/06/kuroko-no-basket-3rd-season-tap-2.jpg">Tập 52 - Là của tôi</button>
+				<button class="btn btn-info btnImg" dataEp="53"><img src="https://i.imacdn.com/vg/2015/06/kuroko-no-basket-3rd-season-tap-3.jpg">Tập 53 - Đừng cản đường tôi</button>
+				<button class="btn btn-info btnImg" dataEp="54"><img src="https://i.imacdn.com/vg/2015/06/kuroko-no-basket-3rd-season-tap-4.jpg">Tập 54 - Tớ sẽ nhận nó!</button>
+				<button class="btn btn-info btnImg" dataEp="55"><img src="https://i.imacdn.com/vg/2015/06/kuroko-no-basket-3rd-season-tap-5.jpg">Tập 55 - Tôi không biết đấy!</button>
+				<button class="btn btn-info btnImg" dataEp="56"><img src="https://i.imacdn.com/vg/2015/05/kuroko-no-basket-3rd-season-tap-6-1424000936.jpg">Tập 56 - Tôi sẽ đưa nó cho các cậu!</button>
+				<button class="btn btn-info btnImg" dataEp="57"><img src="https://i.imacdn.com/vg/2015/05/kuroko-no-basket-3rd-season-tap-7-1424675587.jpg">Tập 57 - Tôi không tài nào nín cười được!</button>
+				<button class="btn btn-info btnImg" dataEp="58"><img src="https://i.imacdn.com/vg/2015/05/kuroko-no-basket-3rd-season-tap-8-1425226664.jpg">Tập 58 - Ánh sáng đích thực!</button>
+				<button class="btn btn-info btnImg" dataEp="59"><img src="https://i.imacdn.com/vg/2015/05/kuroko-no-basket-3rd-season-tap-9-1425815201.jpg">Tập 59 - Đừng đánh giá thấp bọn tôi!</button>
+				<button class="btn btn-info btnImg" dataEp="60"><img src="https://i.imacdn.com/vg/2015/05/kuroko-no-basket-3rd-season-tap-10-1426433065.jpg">Tập 60 - Để chiến thắng!</button>
+				<button class="btn btn-info btnImg" dataEp="61"><img src="https://i.imacdn.com/vg/2015/05/kuroko-no-basket-3rd-season-tap-11-1427022113.jpg">Tập 61 - Lần này, chắc chắn!</button>
+				<button class="btn btn-info btnImg" dataEp="62"><img src="https://i.imacdn.com/vg/2015/05/kuroko-no-basket-3rd-season-tap-12-1427642072.jpg">Tập 62 - Cậu ấy là cầu thủ tuyệt vời nhất!</button>
+				<button class="btn btn-info btnImg" dataEp="63"><img src="https://i.imacdn.com/vg/2015/05/kuroko-no-basket-3rd-season-tap-13-1430814622.jpg">Tập 63 - Một ngày trời xanh biếc!</button>
+				<button class="btn btn-info btnImg" dataEp="64"><img src="https://i.imacdn.com/vg/2015/05/kuroko-no-basket-3rd-season-tap-14-1428907346.jpg">Tập 64 - ....Xin lỗi</button>
+				<button class="btn btn-info btnImg" dataEp="65"><img src="https://i.imacdn.com/vg/2015/05/kuroko-no-basket-3rd-season-tap-15-1429456760.jpg">Tập 65 - Chúng ta không còn là.....</button>
+				<button class="btn btn-info btnImg" dataEp="66"><img src="https://i.imacdn.com/vg/2015/05/kuroko-no-basket-3rd-season-tap-16-1430066276.jpg">Tập 66 - Chiến thắng là gì?</button>
+				<button class="btn btn-info btnImg" dataEp="67"><img src="https://i.imacdn.com/vg/2015/05/kuroko-no-basket-3rd-season-tap-17-1430924430.jpg">Tập 67 - Trận đấu cuối cùng</button>
+				<button class="btn btn-info btnImg" dataEp="68"><img src="https://i.imacdn.com/vg/2015/05/kuroko-no-basket-3rd-season-tap-18-1431313730.jpg">Tập 68 - Chẳng phải điều đó tốt hơn sao?</button>
+				<button class="btn btn-info btnImg" dataEp="69"><img src="https://i.imacdn.com/vg/2015/05/kuroko-no-basket-3rd-season-tap-19-1432041904.jpg">Tập 69 - Kỳ tích sẽ không xuất hiện</button>
+				<button class="btn btn-info btnImg" dataEp="70"><img src="https://i.imacdn.com/vg/2015/05/kuroko-no-basket-3rd-season-tap-20-1432632612.jpg">Tập 70 - Sức nặng của quyết tâm</button>
+				<button class="btn btn-info btnImg" dataEp="71"><img src="https://i.imacdn.com/vg/2015/06/kuroko-no-basket-3rd-season-tap-21-1433204942.jpg">Tập 71 - Tôi đang làm mọi thứ theo cách của mình</button>
+				<button class="btn btn-info btnImg" dataEp="72"><img src="https://i.imacdn.com/vg/2015/06/kuroko-no-basket-3rd-season-tap-22-1433696510.jpg">Tập 72 - Lời cảnh báo</button>
+				<button class="btn btn-info btnImg" dataEp="73"><img src="https://i.imacdn.com/vg/2015/06/kuroko-no-basket-3rd-season-tap-23-1434349665.jpg">Tập 73 - Sao cậu không từ bỏ đi</button>
+				<button class="btn btn-info btnImg" dataEp="74"><img src="https://i.imacdn.com/vg/2015/06/kuroko-no-basket-3rd-season-tap-24-1434936718.jpg">Tập 74 - Ra đó là CẬU</button>
+				<button class="btn btn-info btnImg" dataEp="75"><img src="https://i.imacdn.com/vg/2015/07/kuroko-no-basket-3rd-season-tap-25-1435738987.jpg">Tập 75 - Vẫn còn nhiều lần nữa</button>
+
+			  </div>
+			</div>			
+		</div>
+	</div>
+
+	<div class="col-sm-12" style="background-color: darkgreen;">
+<!-- 1-25 -->
+		<button class="btn btn-info selected  btnEp" dataEp="1" dataVideo="">1</button>
+		<button class="btn btn-info btnEp" dataEp="2" dataVideo="">2</button>
+		<button class="btn btn-info btnEp" dataEp="3" dataVideo="">3</button>
+		<button class="btn btn-info btnEp" dataEp="4" dataVideo="">4</button>
+		<button class="btn btn-info btnEp" dataEp="5" dataVideo="">5</button>
+		<button class="btn btn-info btnEp" dataEp="6" dataVideo="">6</button>
+		<button class="btn btn-info btnEp" dataEp="7" dataVideo="">7</button>
+		<button class="btn btn-info btnEp" dataEp="8" dataVideo="">8</button>
+		<button class="btn btn-info btnEp" dataEp="9" dataVideo="">9</button>
+		<button class="btn btn-info btnEp" dataEp="10" dataVideo="">10</button>
+		<button class="btn btn-info btnEp" dataEp="11" dataVideo="">11</button>
+		<button class="btn btn-info btnEp" dataEp="12" dataVideo="">12</button>
+		<button class="btn btn-info btnEp" dataEp="13" dataVideo="">13</button>
+		<button class="btn btn-info btnEp" dataEp="14" dataVideo="">14</button>
+		<button class="btn btn-info btnEp" dataEp="15" dataVideo="">15</button>
+		<button class="btn btn-info btnEp" dataEp="16" dataVideo="">16</button>
+		<button class="btn btn-info btnEp" dataEp="17" dataVideo="">17</button>
+		<button class="btn btn-info btnEp" dataEp="18" dataVideo="">18</button>
+		<button class="btn btn-info btnEp" dataEp="19" dataVideo="">19</button>
+		<button class="btn btn-info btnEp" dataEp="20" dataVideo="">20</button>
+		<button class="btn btn-info btnEp" dataEp="21" dataVideo="">21</button>
+		<button class="btn btn-info btnEp" dataEp="22" dataVideo="">22</button>
+		<button class="btn btn-info btnEp" dataEp="23" dataVideo="">23</button>
+		<button class="btn btn-info btnEp" dataEp="24" dataVideo="">24</button>
+		<button class="btn btn-info btnEp" dataEp="25" dataVideo="">25</button>
+
+<div style="margin:5px"></div>
+<!-- 26 - 50 -->
+		<button class="btn btn-info btnEp" dataEp="26" dataVideo="">26</button>
+		<button class="btn btn-info btnEp" dataEp="27" dataVideo="">27</button>
+		<button class="btn btn-info btnEp" dataEp="28" dataVideo="">28</button>
+		<button class="btn btn-info btnEp" dataEp="29" dataVideo="">29</button>
+		<button class="btn btn-info btnEp" dataEp="30" dataVideo="">30</button>
+		<button class="btn btn-info btnEp" dataEp="31" dataVideo="">31</button>
+		<button class="btn btn-info btnEp" dataEp="32" dataVideo="">32</button>
+		<button class="btn btn-info btnEp" dataEp="33" dataVideo="">33</button>
+		<button class="btn btn-info btnEp" dataEp="34" dataVideo="">34</button>
+		<button class="btn btn-info btnEp" dataEp="35" dataVideo="">35</button>
+		<button class="btn btn-info btnEp" dataEp="36" dataVideo="">36</button>
+		<button class="btn btn-info btnEp" dataEp="37" dataVideo="">37</button>
+		<button class="btn btn-info btnEp" dataEp="38" dataVideo="">38</button>
+		<button class="btn btn-info btnEp" dataEp="39" dataVideo="">39</button>
+		<button class="btn btn-info btnEp" dataEp="40" dataVideo="">40</button>
+		<button class="btn btn-info btnEp" dataEp="41" dataVideo="">41</button>
+		<button class="btn btn-info btnEp" dataEp="42" dataVideo="">42</button>
+		<button class="btn btn-info btnEp" dataEp="43" dataVideo="">43</button>
+		<button class="btn btn-info btnEp" dataEp="44" dataVideo="">44</button>
+		<button class="btn btn-info btnEp" dataEp="45" dataVideo="">45</button>
+		<button class="btn btn-info btnEp" dataEp="46" dataVideo="">46</button>
+		<button class="btn btn-info btnEp" dataEp="47" dataVideo="">47</button>
+		<button class="btn btn-info btnEp" dataEp="48" dataVideo="">48</button>
+		<button class="btn btn-info btnEp" dataEp="49" dataVideo="">49</button>
+		<button class="btn btn-info btnEp" dataEp="50" dataVideo="">50</button>
+
+<div style="margin:5px"></div>
+<!-- 51 - 75 -->		
+		<button class="btn btn-info btnEp" dataEp="51" dataVideo="">51</button>
+		<button class="btn btn-info btnEp" dataEp="52" dataVideo="">52</button>
+		<button class="btn btn-info btnEp" dataEp="53" dataVideo="">53</button>
+		<button class="btn btn-info btnEp" dataEp="54" dataVideo="">54</button>
+		<button class="btn btn-info btnEp" dataEp="55" dataVideo="">55</button>
+		<button class="btn btn-info btnEp" dataEp="56" dataVideo="">56</button>
+		<button class="btn btn-info btnEp" dataEp="57" dataVideo="">57</button>
+		<button class="btn btn-info btnEp" dataEp="58" dataVideo="">58</button>
+		<button class="btn btn-info btnEp" dataEp="59" dataVideo="">59</button>
+		<button class="btn btn-info btnEp" dataEp="60" dataVideo="">60</button>
+		<button class="btn btn-info btnEp" dataEp="61" dataVideo="">61</button>
+		<button class="btn btn-info btnEp" dataEp="62" dataVideo="">62</button>
+		<button class="btn btn-info btnEp" dataEp="63" dataVideo="">63</button>
+		<button class="btn btn-info btnEp" dataEp="64" dataVideo="">64</button>
+		<button class="btn btn-info btnEp" dataEp="65" dataVideo="">65</button>
+		<button class="btn btn-info btnEp" dataEp="66" dataVideo="">66</button>
+		<button class="btn btn-info btnEp" dataEp="67" dataVideo="">67</button>
+		<button class="btn btn-info btnEp" dataEp="68" dataVideo="">68</button>
+		<button class="btn btn-info btnEp" dataEp="69" dataVideo="">69</button>
+		<button class="btn btn-info btnEp" dataEp="70" dataVideo="">70</button>
+		<button class="btn btn-info btnEp" dataEp="71" dataVideo="">71</button>
+		<button class="btn btn-info btnEp" dataEp="72" dataVideo="">72</button>
+		<button class="btn btn-info btnEp" dataEp="73" dataVideo="">73</button>
+		<button class="btn btn-info btnEp" dataEp="74" dataVideo="">74</button>
+		<button class="btn btn-info btnEp" dataEp="75" dataVideo="">75</button>		
+	</div>
+
+	<div w3-include-html="../footer.html"></div> 
+
+
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			function includeHTML() {
+			  var z, i, elmnt, file, xhttp;
+			  /*loop through a collection of all HTML elements:*/
+			  z = document.getElementsByTagName("*");
+			  for (i = 0; i < z.length; i++) {
+			    elmnt = z[i];
+			    /*search for elements with a certain atrribute:*/
+			    file = elmnt.getAttribute("w3-include-html");
+			    if (file) {
+			      /*make an HTTP request using the attribute value as the file name:*/
+			      xhttp = new XMLHttpRequest();
+			      xhttp.onreadystatechange = function() {
+			        if (this.readyState == 4) {
+			          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+			          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+			          /*remove the attribute, and call this function once more:*/
+			          elmnt.removeAttribute("w3-include-html");
+			          includeHTML();
+			        }
+			      }      
+			      xhttp.open("GET", file, true);
+			      xhttp.send();
+			      /*exit the function:*/
+			      return;
+			    }
+			  }
+			};
+
+			includeHTML();
+
+			function remove_selected() {
+				$("button").removeClass("selected");
+			}
+
+			function btnEp_selected(ep){
+				$(".btnEp").each(function () {
+					var btnEp = parseInt($(this).attr('dataep'));
+					if(ep == btnEp){
+						$(this).addClass("selected");
+						$("#video").attr("src", $(this).attr('dataVideo'));
+					}
+				})
+			};
+
+			function btnImg_selected(ep){
+				$(".btnImg").each(function () {
+					var btnEp = parseInt($(this).attr('dataep'));
+					if(ep == btnEp){
+						$(this).addClass("selected");
+						$(".tap").text($(this).text());
+					}
+				})
+			};
+
+			$(".btnEp").click(function(){
+				remove_selected();
+				$(this).addClass("selected");
+				var ep = parseInt($(this).attr('dataep'));
+				btnImg_selected(ep);
+				$("#video").attr("src", $(this).attr('dataVideo'));
+			});
+
+			$(".btnImg").click(function(){
+				remove_selected();
+				$(this).addClass("selected");
+				var ep = parseInt($(this).attr('dataep'));
+				btnEp_selected(ep);
+				$(".tap").text($(this).text());
+			});
+			
+		})
+	</script>
+</body>
+</html>

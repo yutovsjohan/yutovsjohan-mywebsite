@@ -24,27 +24,7 @@
 	</style>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: green;">
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Sentai
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="../sentai/s3b.html">Super Sentai Saikyo Battle</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="../sentai/lupvskei.html">Kaitou Sentai Lupinranger VS Keisatsu Sentai Patranger</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="../sentai/kyoryuger.html">Zyuden Sentai Kyoryuger</a>
-					</div>
-				</li>		     
-			</ul>		    
-		</div>
-	</nav>
+	<div w3-include-html="../header.html"></div>
 
 	<nav aria-label="breadcrumb">
 		<ol class="breadcrumb">
@@ -67,11 +47,15 @@
 	</div>
 
 	<div class="video" id="3" hidden="">
-		Nothing
+		<center>
+			<iframe width="853" height="480" src="https://redirector.googlevideo.com/videoplayback?id=eca9ddde8dc640d8&itag=18&source=picasa&begin=0&requiressl=yes&mm=30&mn=sn-i3b7knlk&ms=nxu&mv=u&pl=48&sc=yes&ei=DIGOXNOxCI7eoQOzq7OoAQ&susc=ph&app=fife&mime=video/mp4&dur=1420.341&lmt=1551695343801161&mt=1552842797&ipbits=0&keepalive=yes&ratebypass=yes&ip=2400:6540:0:ffff:0:25ff:fe0e:d07d&expire=1552850220&sparams=ip,ipbits,expire,id,itag,source,requiressl,mm,mn,ms,mv,pl,sc,ei,susc,app,mime,dur,lmt&signature=1837B9F70F87AFC1749DBD82BFF7D265CFCE2A16080AF98CD9C31544857582B0.B7776642F6E7041359A0AAB579279CEE954FC9B5941D72C25F7D4F8C22D4A5F2&key=us0" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+		</center>
 	</div>
 
 	<div class="video" id="4" hidden="">
-		Nothing
+		<center>
+			<iframe width="853" height="480" src="https://redirector.googlevideo.com/videoplayback?id=5fc18258cd5ce070&itag=22&source=picasa&begin=0&requiressl=yes&mm=30&mn=sn-i3beln7r&ms=nxu&mv=u&pl=48&sc=yes&ei=BHyOXO3CENHYogOF9524CA&susc=ph&app=fife&mime=video/mp4&cnr=14&dur=1395.449&lmt=1552783679532858&mt=1552840403&ipbits=0&keepalive=yes&ratebypass=yes&ip=2400:6540:0:ffff:0:25ff:fe0e:d07d&expire=1552848932&sparams=ip,ipbits,expire,id,itag,source,requiressl,mm,mn,ms,mv,pl,sc,ei,susc,app,mime,cnr,dur,lmt&signature=9594E9570DBFC24B95DE53E8843BA83F02969FCEB1AD39FB048F094E98E400A0.C4028E0395D6639A4C57B5F91EFBAF20A21043F693FBFE9FC4F4220296CD6AD3&key=us0" frameborder="0" allow="autoplay" allowfullscreen></iframe>			
+		</center>
 	</div>
 
 	<div class="col-sm-12" style="background-color: darkgreen">
@@ -81,7 +65,7 @@
 		<button class="btn btn-primary" id="t4">04</button>
 	</div>
 
-	<div class="hf">@Copyright 2019 by yuto. All Rights Reserved.</div>	
+	<div w3-include-html="../footer.html"></div> 
 
 
 	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
@@ -89,6 +73,36 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
+			function includeHTML() {
+			  var z, i, elmnt, file, xhttp;
+			  /*loop through a collection of all HTML elements:*/
+			  z = document.getElementsByTagName("*");
+			  for (i = 0; i < z.length; i++) {
+			    elmnt = z[i];
+			    /*search for elements with a certain atrribute:*/
+			    file = elmnt.getAttribute("w3-include-html");
+			    if (file) {
+			      /*make an HTTP request using the attribute value as the file name:*/
+			      xhttp = new XMLHttpRequest();
+			      xhttp.onreadystatechange = function() {
+			        if (this.readyState == 4) {
+			          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+			          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+			          /*remove the attribute, and call this function once more:*/
+			          elmnt.removeAttribute("w3-include-html");
+			          includeHTML();
+			        }
+			      }      
+			      xhttp.open("GET", file, true);
+			      xhttp.send();
+			      /*exit the function:*/
+			      return;
+			    }
+			  }
+			};
+
+			includeHTML();
+			
 			function remove_selected() {
 				$("button").removeClass("selected");
 			}
@@ -116,7 +130,7 @@
 			$("#t3").click(function(){
 				remove_selected();
 				reset_hidden();
-				$("#tap").text("3");
+				$("#tap").text("3: Bí mật lớn bị phanh phui");
 				$("#t3").addClass("selected");
 				$("#3").removeAttr("hidden");
 			})	
@@ -124,7 +138,7 @@
 			$("#t4").click(function(){
 				remove_selected();
 				reset_hidden();
-				$("#tap").text("4");
+				$("#tap").text("4: Và hướng tới ngày mai");
 				$("#t4").addClass("selected");
 				$("#4").removeAttr("hidden");
 			})	

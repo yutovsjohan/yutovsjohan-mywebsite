@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Slam dunk</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="#" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<style type="text/css">
+		.hf{
+			height: 40px;
+			background-color: darkred;
+			color: white;
+			text-align: center;
+			padding: 7px;
+		}
+		.selected{
+			background-color: yellow;
+			color: red;
+		}
+
+		.scrollbar
+		{
+			margin-left: 10px;
+			float: left;
+			height: 480px;
+			width: 400px;
+			background: #F5F5F5;
+			overflow-y: scroll;
+			margin-bottom: 25px;
+		}
+		.force-overflow
+		{
+			min-height: 450px;
+		}
+		.force-overflow button{
+			width: 100%;
+			text-align: left;
+		}
+		.force-overflow img{
+			width: 106px;
+			height: 60px;
+		}
+	</style>
+</head>
+<body>
+	<div w3-include-html="../header.html"></div>
+
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+			<li class="breadcrumb-item"><a href="#">Anime</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Slam dunk <span class="tap">Tập 1 </span></li>
+		</ol>
+	</nav>
+
+	<div class="row">
+		<div class="row-sm-8" style="margin-left: 25px">
+			<!-- <video id="video" width="853" height="480" controls autoplay="">
+			  <source  src="https://drive.google.com/file/d/10O1zmWt35GBNE5lsAEuNuGvKSYcRAI4A/view" type="video/mp4">
+			  Your browser does not support the video tag.
+			</video> -->
+			<iframe id="video" src="https://vnso-zn-9-tf-zingtv-video-4.zadn.vn/2013/0603/e6/5daeb5713047ee1b7d7e2a850ba5099a.mp4?authen=exp=1555562762~acl=5daeb5713047ee1b7d7e2a850ba5099a~hmac=7848cc37734d1556156964a58c73de23" width="853" height="480" allowfullsrceen></iframe>
+		</div>
+		<div class="row-sm-4">
+			<div class="scrollbar">
+			  <div class="force-overflow">
+<!-- 1 - 25 -->
+		  		<button class="btn btn-info selected btnImg" dataEp="1"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-1-1425265055.jpg">Tập 1</button>
+				<button class="btn btn-info btnImg" dataEp="2"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-2-1425265055.jpg">Tập 2</button>
+				<button class="btn btn-info btnImg" dataEp="3"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-3-1425265055.jpg">Tập 3</button>
+				<button class="btn btn-info btnImg" dataEp="4"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-4-1425265055.jpg">Tập 4</button>
+				<button class="btn btn-info btnImg" dataEp="5"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-5-1425265057.jpg">Tập 5</button>
+				<button class="btn btn-info btnImg" dataEp="6"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-6-1425265057.jpg">Tập 6</button>
+				<button class="btn btn-info btnImg" dataEp="7"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-7-1425265058.jpg">Tập 7</button>
+				<button class="btn btn-info btnImg" dataEp="8"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-8-1425265058.jpg">Tập 8</button>
+				<button class="btn btn-info btnImg" dataEp="9"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-9-1425265059.jpg">Tập 9</button>
+				<button class="btn btn-info btnImg" dataEp="10"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-10-1425265059.jpg">Tập 10</button>
+				<button class="btn btn-info btnImg" dataEp="11"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-11-1425265060.jpg">Tập 11</button>
+				<button class="btn btn-info btnImg" dataEp="12"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-12-1425265060.jpg">Tập 12</button>
+				<button class="btn btn-info btnImg" dataEp="13"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-13-1425265061.jpg">Tập 13</button>
+				<button class="btn btn-info btnImg" dataEp="14"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-14-1425265061.jpg">Tập 14</button>
+				<button class="btn btn-info btnImg" dataEp="15"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-15-1425265061.jpg">Tập 15</button>
+				<button class="btn btn-info btnImg" dataEp="16"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-16-1425265062.jpg">Tập 16</button>
+				<button class="btn btn-info btnImg" dataEp="17"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-17-1425265062.jpg">Tập 17</button>
+				<button class="btn btn-info btnImg" dataEp="18"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-18-1425265063.jpg">Tập 18</button>
+				<button class="btn btn-info btnImg" dataEp="19"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-19-1425265063.jpg">Tập 19</button>
+				<button class="btn btn-info btnImg" dataEp="20"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-20-1425265063.jpg">Tập 20</button>
+				<button class="btn btn-info btnImg" dataEp="21"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-21-1425265064.jpg">Tập 21</button>
+				<button class="btn btn-info btnImg" dataEp="22"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-22-1425265064.jpg">Tập 22</button>
+				<button class="btn btn-info btnImg" dataEp="23"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-23-1425265065.jpg">Tập 23</button>
+				<button class="btn btn-info btnImg" dataEp="24"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-24-1425265065.jpg">Tập 24</button>
+				<button class="btn btn-info btnImg" dataEp="25"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-25-1425265066.jpg">Tập 25</button>
+				
+<!-- 26-50 -->
+				<button class="btn btn-info btnImg" dataEp="26"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-26-1425265066.jpg">Tập 26</button>
+				<button class="btn btn-info btnImg" dataEp="27"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-27-1425265067.jpg">Tập 27</button>
+				<button class="btn btn-info btnImg" dataEp="28"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-28-1425265067.jpg">Tập 28</button>
+				<button class="btn btn-info btnImg" dataEp="29"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-29-1425265067.jpg">Tập 29</button>
+				<button class="btn btn-info btnImg" dataEp="30"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-30-1425265067.jpg">Tập 30</button>
+				<button class="btn btn-info btnImg" dataEp="31"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-31-1425265068.jpg">Tập 31</button>
+				<button class="btn btn-info btnImg" dataEp="32"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-32-1425265068.jpg">Tập 32</button>
+				<button class="btn btn-info btnImg" dataEp="33"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-33-1425265069.jpg">Tập 33</button>
+				<button class="btn btn-info btnImg" dataEp="34"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-34-1425265069.jpg">Tập 34</button>
+				<button class="btn btn-info btnImg" dataEp="35"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-35-1425265070.jpg">Tập 35</button>
+				<button class="btn btn-info btnImg" dataEp="36"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-36-1425265071.jpg">Tập 36</button>
+				<button class="btn btn-info btnImg" dataEp="37"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-37-1425265071.jpg">Tập 37</button>
+				<button class="btn btn-info btnImg" dataEp="38"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-38-1425265071.jpg">Tập 38</button>
+				<button class="btn btn-info btnImg" dataEp="39"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-39-1425265073.jpg">Tập 39</button>
+				<button class="btn btn-info btnImg" dataEp="40"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-40-1425265073.jpg">Tập 40</button>
+				<button class="btn btn-info btnImg" dataEp="41"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-41-1425265073.jpg">Tập 41</button>
+				<button class="btn btn-info btnImg" dataEp="42"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-42-1425265075.jpg">Tập 42</button>
+				<button class="btn btn-info btnImg" dataEp="43"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-43-1425265075.jpg">Tập 43</button>
+				<button class="btn btn-info btnImg" dataEp="44"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-44-1425265075.jpg">Tập 44</button>
+				<button class="btn btn-info btnImg" dataEp="45"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-45-1425265076.jpg">Tập 45</button>
+				<button class="btn btn-info btnImg" dataEp="46"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-46-1425265076.jpg">Tập 46</button>
+				<button class="btn btn-info btnImg" dataEp="47"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-47-1425265078.jpg">Tập 47</button>
+				<button class="btn btn-info btnImg" dataEp="48"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-48-1425265079.jpg">Tập 48</button>
+				<button class="btn btn-info btnImg" dataEp="49"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-49-1425265079.jpg">Tập 49</button>
+				<button class="btn btn-info btnImg" dataEp="50"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-50-1425265080.jpg">Tập 50</button>
+				
+<!-- 51-75 -->
+				<button class="btn btn-info btnImg" dataEp="51"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-51-1425265081.jpg">Tập 51</button>
+				<button class="btn btn-info btnImg" dataEp="52"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-52-1425265081.jpg">Tập 52</button>
+				<button class="btn btn-info btnImg" dataEp="53"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-53-1425265082.jpg">Tập 53</button>
+				<button class="btn btn-info btnImg" dataEp="54"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-54-1425265082.jpg">Tập 54</button>
+				<button class="btn btn-info btnImg" dataEp="55"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-55-1425265082.jpg">Tập 55</button>
+				<button class="btn btn-info btnImg" dataEp="56"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-56-1425265082.jpg">Tập 56</button>
+				<button class="btn btn-info btnImg" dataEp="57"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-57-1425265083.jpg">Tập 57</button>
+				<button class="btn btn-info btnImg" dataEp="58"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-58-1425265084.jpg">Tập 58</button>
+				<button class="btn btn-info btnImg" dataEp="59"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-59-1425265084.jpg">Tập 59</button>
+				<button class="btn btn-info btnImg" dataEp="60"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-60-1425265084.jpg">Tập 60</button>
+				<button class="btn btn-info btnImg" dataEp="61"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-61-1425265085.jpg">Tập 61</button>
+				<button class="btn btn-info btnImg" dataEp="62"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-62-1425265085.jpg">Tập 62</button>
+				<button class="btn btn-info btnImg" dataEp="63"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-63-1425265086.jpg">Tập 63</button>
+				<button class="btn btn-info btnImg" dataEp="64"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-64-1425265086.jpg">Tập 64</button>
+				<button class="btn btn-info btnImg" dataEp="65"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-65-1425265087.jpg">Tập 65</button>
+				<button class="btn btn-info btnImg" dataEp="66"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-66-1425265087.jpg">Tập 66</button>
+				<button class="btn btn-info btnImg" dataEp="67"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-67-1425265087.jpg">Tập 67</button>
+				<button class="btn btn-info btnImg" dataEp="68"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-68-1425265087.jpg">Tập 68</button>
+				<button class="btn btn-info btnImg" dataEp="69"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-69-1425265089.jpg">Tập 69</button>
+				<button class="btn btn-info btnImg" dataEp="70"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-70-1425265089.jpg">Tập 70</button>
+				<button class="btn btn-info btnImg" dataEp="71"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-71-1425265089.jpg">Tập 71</button>
+				<button class="btn btn-info btnImg" dataEp="72"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-72-1425265089.jpg">Tập 72</button>
+				<button class="btn btn-info btnImg" dataEp="73"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-73-1425265090.jpg">Tập 73</button>
+				<button class="btn btn-info btnImg" dataEp="74"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-74-1425265091.jpg">Tập 74</button>
+				<button class="btn btn-info btnImg" dataEp="75"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-75-1425265091.jpg">Tập 75</button>
+				
+<!-- 76-101 -->
+				<button class="btn btn-info btnImg" dataEp="76"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-76-1425265092.jpg">Tập 76</button>
+				<button class="btn btn-info btnImg" dataEp="77"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-77-1425265092.jpg">Tập 77</button>
+				<button class="btn btn-info btnImg" dataEp="78"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-78-1425265093.jpg">Tập 78</button>
+				<button class="btn btn-info btnImg" dataEp="79"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-79-1425265094.jpg">Tập 79</button>
+				<button class="btn btn-info btnImg" dataEp="80"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-80-1425265095.jpg">Tập 80</button>
+				<button class="btn btn-info btnImg" dataEp="81"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-81-1425265095.jpg">Tập 81</button>
+				<button class="btn btn-info btnImg" dataEp="82"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-82-1425265096.jpg">Tập 82</button>
+				<button class="btn btn-info btnImg" dataEp="83"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-83-1425265097.jpg">Tập 83</button>
+				<button class="btn btn-info btnImg" dataEp="84"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-84-1425265097.jpg">Tập 84</button>
+				<button class="btn btn-info btnImg" dataEp="85"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-85-1425265099.jpg">Tập 85</button>
+				<button class="btn btn-info btnImg" dataEp="86"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-86-1425265098.jpg">Tập 86</button>
+				<button class="btn btn-info btnImg" dataEp="87"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-87-1425265099.jpg">Tập 87</button>
+				<button class="btn btn-info btnImg" dataEp="88"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-88-1425265100.jpg">Tập 88</button>
+				<button class="btn btn-info btnImg" dataEp="89"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-89-1425265100.jpg">Tập 89</button>
+				<button class="btn btn-info btnImg" dataEp="90"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-90-1425265101.jpg">Tập 90</button>
+				<button class="btn btn-info btnImg" dataEp="91"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-91-1425265101.jpg">Tập 91</button>
+				<button class="btn btn-info btnImg" dataEp="92"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-92-1425265102.jpg">Tập 92</button>
+				<button class="btn btn-info btnImg" dataEp="93"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-93-1425265102.jpg">Tập 93</button>
+				<button class="btn btn-info btnImg" dataEp="94"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-94-1425265103.jpg">Tập 94</button>
+				<button class="btn btn-info btnImg" dataEp="95"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-95-1425265103.jpg">Tập 95</button>
+				<button class="btn btn-info btnImg" dataEp="96"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-96-1425265103.jpg">Tập 96</button>
+				<button class="btn btn-info btnImg" dataEp="97"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-97-1425265104.jpg">Tập 97</button>
+				<button class="btn btn-info btnImg" dataEp="98"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-98-1425265104.jpg">Tập 98</button>
+				<button class="btn btn-info btnImg" dataEp="99"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-99-1425265104.jpg">Tập 99</button>
+				<button class="btn btn-info btnImg" dataEp="100"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-100-1425265105.jpg">Tập 100</button>
+				<button class="btn btn-info btnImg" dataEp="101"><img src="https://i.imacdn.com/vg/2015/05/slam-dunk-tap-101-1425265106.jpg">Tập 101</button>
+
+			  </div>
+			</div>			
+		</div>
+	</div>
+
+	<div class="col-sm-12" style="background-color: darkgreen;">
+<!-- 1-26 -->
+		<button class="btn btn-info selected  btnEp" dataEp="1" dataVideo="">1</button>
+		<button class="btn btn-info btnEp" dataEp="2" dataVideo="">2</button>
+		<button class="btn btn-info btnEp" dataEp="3" dataVideo="">3</button>
+		<button class="btn btn-info btnEp" dataEp="4" dataVideo="">4</button>
+		<button class="btn btn-info btnEp" dataEp="5" dataVideo="">5</button>
+		<button class="btn btn-info btnEp" dataEp="6" dataVideo="">6</button>
+		<button class="btn btn-info btnEp" dataEp="7" dataVideo="">7</button>
+		<button class="btn btn-info btnEp" dataEp="8" dataVideo="">8</button>
+		<button class="btn btn-info btnEp" dataEp="9" dataVideo="">9</button>
+		<button class="btn btn-info btnEp" dataEp="10" dataVideo="">10</button>
+		<button class="btn btn-info btnEp" dataEp="11" dataVideo="">11</button>
+		<button class="btn btn-info btnEp" dataEp="12" dataVideo="">12</button>
+		<button class="btn btn-info btnEp" dataEp="13" dataVideo="">13</button>
+		<button class="btn btn-info btnEp" dataEp="14" dataVideo="">14</button>
+		<button class="btn btn-info btnEp" dataEp="15" dataVideo="">15</button>
+		<button class="btn btn-info btnEp" dataEp="16" dataVideo="">16</button>
+		<button class="btn btn-info btnEp" dataEp="17" dataVideo="">17</button>
+		<button class="btn btn-info btnEp" dataEp="18" dataVideo="">18</button>
+		<button class="btn btn-info btnEp" dataEp="19" dataVideo="">19</button>
+		<button class="btn btn-info btnEp" dataEp="20" dataVideo="">20</button>
+		<button class="btn btn-info btnEp" dataEp="21" dataVideo="">21</button>
+		<button class="btn btn-info btnEp" dataEp="22" dataVideo="">22</button>
+		<button class="btn btn-info btnEp" dataEp="23" dataVideo="">23</button>
+		<button class="btn btn-info btnEp" dataEp="24" dataVideo="">24</button>
+		<button class="btn btn-info btnEp" dataEp="25" dataVideo="">25</button>
+		<button class="btn btn-info btnEp" dataEp="26" dataVideo="">26</button>
+
+<div style="margin:5px"></div>
+<!-- 27 - 51 -->
+		
+		<button class="btn btn-info btnEp" dataEp="27" dataVideo="">27</button>
+		<button class="btn btn-info btnEp" dataEp="28" dataVideo="">28</button>
+		<button class="btn btn-info btnEp" dataEp="29" dataVideo="">29</button>
+		<button class="btn btn-info btnEp" dataEp="30" dataVideo="">30</button>
+		<button class="btn btn-info btnEp" dataEp="31" dataVideo="">31</button>
+		<button class="btn btn-info btnEp" dataEp="32" dataVideo="">32</button>
+		<button class="btn btn-info btnEp" dataEp="33" dataVideo="">33</button>
+		<button class="btn btn-info btnEp" dataEp="34" dataVideo="">34</button>
+		<button class="btn btn-info btnEp" dataEp="35" dataVideo="">35</button>
+		<button class="btn btn-info btnEp" dataEp="36" dataVideo="">36</button>
+		<button class="btn btn-info btnEp" dataEp="37" dataVideo="">37</button>
+		<button class="btn btn-info btnEp" dataEp="38" dataVideo="">38</button>
+		<button class="btn btn-info btnEp" dataEp="39" dataVideo="">39</button>
+		<button class="btn btn-info btnEp" dataEp="40" dataVideo="">40</button>
+		<button class="btn btn-info btnEp" dataEp="41" dataVideo="">41</button>
+		<button class="btn btn-info btnEp" dataEp="42" dataVideo="">42</button>
+		<button class="btn btn-info btnEp" dataEp="43" dataVideo="">43</button>
+		<button class="btn btn-info btnEp" dataEp="44" dataVideo="">44</button>
+		<button class="btn btn-info btnEp" dataEp="45" dataVideo="">45</button>
+		<button class="btn btn-info btnEp" dataEp="46" dataVideo="">46</button>
+		<button class="btn btn-info btnEp" dataEp="47" dataVideo="">47</button>
+		<button class="btn btn-info btnEp" dataEp="48" dataVideo="">48</button>
+		<button class="btn btn-info btnEp" dataEp="49" dataVideo="">49</button>
+		<button class="btn btn-info btnEp" dataEp="50" dataVideo="">50</button>
+		<button class="btn btn-info btnEp" dataEp="51" dataVideo="">51</button>
+
+<div style="margin:5px"></div>
+<!-- 52 - 76 -->		
+		
+		<button class="btn btn-info btnEp" dataEp="52" dataVideo="">52</button>
+		<button class="btn btn-info btnEp" dataEp="53" dataVideo="">53</button>
+		<button class="btn btn-info btnEp" dataEp="54" dataVideo="">54</button>
+		<button class="btn btn-info btnEp" dataEp="55" dataVideo="">55</button>
+		<button class="btn btn-info btnEp" dataEp="56" dataVideo="">56</button>
+		<button class="btn btn-info btnEp" dataEp="57" dataVideo="">57</button>
+		<button class="btn btn-info btnEp" dataEp="58" dataVideo="">58</button>
+		<button class="btn btn-info btnEp" dataEp="59" dataVideo="">59</button>
+		<button class="btn btn-info btnEp" dataEp="60" dataVideo="">60</button>
+		<button class="btn btn-info btnEp" dataEp="61" dataVideo="">61</button>
+		<button class="btn btn-info btnEp" dataEp="62" dataVideo="">62</button>
+		<button class="btn btn-info btnEp" dataEp="63" dataVideo="">63</button>
+		<button class="btn btn-info btnEp" dataEp="64" dataVideo="">64</button>
+		<button class="btn btn-info btnEp" dataEp="65" dataVideo="">65</button>
+		<button class="btn btn-info btnEp" dataEp="66" dataVideo="">66</button>
+		<button class="btn btn-info btnEp" dataEp="67" dataVideo="">67</button>
+		<button class="btn btn-info btnEp" dataEp="68" dataVideo="">68</button>
+		<button class="btn btn-info btnEp" dataEp="69" dataVideo="">69</button>
+		<button class="btn btn-info btnEp" dataEp="70" dataVideo="">70</button>
+		<button class="btn btn-info btnEp" dataEp="71" dataVideo="">71</button>
+		<button class="btn btn-info btnEp" dataEp="72" dataVideo="">72</button>
+		<button class="btn btn-info btnEp" dataEp="73" dataVideo="">73</button>
+		<button class="btn btn-info btnEp" dataEp="74" dataVideo="">74</button>
+		<button class="btn btn-info btnEp" dataEp="75" dataVideo="">75</button>		
+		<button class="btn btn-info btnEp" dataEp="76" dataVideo="">76</button>
+
+<div style="margin:5px"></div>
+<!-- 77 - 101 -->	
+		
+		<button class="btn btn-info btnEp" dataEp="77" dataVideo="">77</button>
+		<button class="btn btn-info btnEp" dataEp="78" dataVideo="">78</button>
+		<button class="btn btn-info btnEp" dataEp="79" dataVideo="">79</button>
+		<button class="btn btn-info btnEp" dataEp="80" dataVideo="">80</button>
+		<button class="btn btn-info btnEp" dataEp="81" dataVideo="">81</button>
+		<button class="btn btn-info btnEp" dataEp="82" dataVideo="">82</button>
+		<button class="btn btn-info btnEp" dataEp="83" dataVideo="">83</button>
+		<button class="btn btn-info btnEp" dataEp="84" dataVideo="">84</button>
+		<button class="btn btn-info btnEp" dataEp="85" dataVideo="">85</button>
+		<button class="btn btn-info btnEp" dataEp="86" dataVideo="">86</button>
+		<button class="btn btn-info btnEp" dataEp="87" dataVideo="">87</button>
+		<button class="btn btn-info btnEp" dataEp="88" dataVideo="">88</button>
+		<button class="btn btn-info btnEp" dataEp="89" dataVideo="">89</button>
+		<button class="btn btn-info btnEp" dataEp="90" dataVideo="">90</button>
+		<button class="btn btn-info btnEp" dataEp="91" dataVideo="">91</button>
+		<button class="btn btn-info btnEp" dataEp="92" dataVideo="">92</button>
+		<button class="btn btn-info btnEp" dataEp="93" dataVideo="">93</button>
+		<button class="btn btn-info btnEp" dataEp="94" dataVideo="">94</button>
+		<button class="btn btn-info btnEp" dataEp="95" dataVideo="">95</button>
+		<button class="btn btn-info btnEp" dataEp="96" dataVideo="">96</button>
+		<button class="btn btn-info btnEp" dataEp="97" dataVideo="">97</button>
+		<button class="btn btn-info btnEp" dataEp="98" dataVideo="">98</button>
+		<button class="btn btn-info btnEp" dataEp="99" dataVideo="">99</button>
+		<button class="btn btn-info btnEp" dataEp="100" dataVideo="">100</button>
+		<button class="btn btn-info btnEp" dataEp="101" dataVideo="">101</button>
+	</div>
+
+
+	<div w3-include-html="../footer.html"></div> 
+
+
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			function includeHTML() {
+			  var z, i, elmnt, file, xhttp;
+			  /*loop through a collection of all HTML elements:*/
+			  z = document.getElementsByTagName("*");
+			  for (i = 0; i < z.length; i++) {
+			    elmnt = z[i];
+			    /*search for elements with a certain atrribute:*/
+			    file = elmnt.getAttribute("w3-include-html");
+			    if (file) {
+			      /*make an HTTP request using the attribute value as the file name:*/
+			      xhttp = new XMLHttpRequest();
+			      xhttp.onreadystatechange = function() {
+			        if (this.readyState == 4) {
+			          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+			          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+			          /*remove the attribute, and call this function once more:*/
+			          elmnt.removeAttribute("w3-include-html");
+			          includeHTML();
+			        }
+			      }      
+			      xhttp.open("GET", file, true);
+			      xhttp.send();
+			      /*exit the function:*/
+			      return;
+			    }
+			  }
+			};
+
+			includeHTML();
+
+			function remove_selected() {
+				$("button").removeClass("selected");
+			}
+
+			function btnEp_selected(ep){
+				$(".btnEp").each(function () {
+					var btnEp = parseInt($(this).attr('dataep'));
+					if(ep == btnEp){
+						$(this).addClass("selected");
+						$("#video").attr("src", $(this).attr('dataVideo'));
+					}
+				})
+			};
+
+			function btnImg_selected(ep){
+				$(".btnImg").each(function () {
+					var btnEp = parseInt($(this).attr('dataep'));
+					if(ep == btnEp){
+						$(this).addClass("selected");
+						$(".tap").text($(this).text());
+					}
+				})
+			};
+
+			$(".btnEp").click(function(){
+				remove_selected();
+				$(this).addClass("selected");
+				var ep = parseInt($(this).attr('dataep'));
+				btnImg_selected(ep);
+				$("#video").attr("src", $(this).attr('dataVideo'));
+			});
+
+			$(".btnImg").click(function(){
+				remove_selected();
+				$(this).addClass("selected");
+				var ep = parseInt($(this).attr('dataep'));
+				btnEp_selected(ep);
+				$(".tap").text($(this).text());
+			});
+			
+		})
+	</script>
+</body>
+</html>
